@@ -6,4 +6,4 @@
 
 Installing:
 
-<a href="https://asciinema.org/a/kQ4VJzgKvUT9KcMvgzjLD98MG" target="_blank"><img src="https://asciinema.org/a/kQ4VJzgKvUT9KcMvgzjLD98MG" /></a>
+<a href="https://asciinema.org/a/kQ4VJzgKvUT9KcMvgzjLD98MG" target="_blank"><img src="https://asciinema.org/a/kQ4VJzgKvUT9KcMvgzjLD98MG.svg" /></a>
