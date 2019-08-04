@@ -6,10 +6,15 @@
 
 # Installing:
 
-Brain-even:
+## npm install -g project-one
 
-<a href="https://asciinema.org/a/kQ4VJzgKvUT9KcMvgzjLD98MG" target="_blank"><img src="https://asciinema.org/a/kQ4VJzgKvUT9KcMvgzjLD98MG.svg" /></a>
+### Brain-even:
 
-Brain-calc:
+<a href="https://asciinema.org/a/7Rp2yoA46dfX8UkaoEJWeFRVV" target="_blank"><img src="https://asciinema.org/a/7Rp2yoA46dfX8UkaoEJWeFRVV.svg" /></a>
 
-<a href="https://asciinema.org/a/chUNuajHmwrMFsaT4HVnGzijX" target="_blank"><img src="https://asciinema.org/a/chUNuajHmwrMFsaT4HVnGzijX.svg" /></a>
+### Brain-calc:
+
+<a href="https://asciinema.org/a/TjBBGAQa1P2PcAxCyJZEpT2rF" target="_blank"><img src="https://asciinema.org/a/TjBBGAQa1P2PcAxCyJZEpT2rF.svg" /></a>
+
+### Brain-gcd:
+<a href="https://asciinema.org/a/g33FtRZzYLfCKBePWvyNBleY3" target="_blank"><img src="https://asciinema.org/a/g33FtRZzYLfCKBePWvyNBleY3.svg" /></a>
