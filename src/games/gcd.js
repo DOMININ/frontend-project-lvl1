@@ -3,8 +3,12 @@ import getGame from '../index';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = () => {
-  const numberFirst = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
-  const numberSecond = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+  const randomMin = 10;
+  const randomMax = 50;
+
+  const numberFirst = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
+  const numberSecond = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
+
   const question = `${numberFirst} ${numberSecond}`;
 
   let numberMax = numberFirst;

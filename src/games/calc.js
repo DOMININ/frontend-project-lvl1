@@ -4,8 +4,12 @@ const description = 'What is the result of the expression?';
 
 const getCalc = () => {
   const operators = ['+', '-', '*'];
-  const randomNumberFirst = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
-  const randomNumberSecond = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+
+  const randomMin = 1;
+  const randomMax = 20;
+
+  const randomNumberFirst = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
+  const randomNumberSecond = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
   const randomOperatorIndex = Math.floor(Math.random() * operators.length);
   const randomOperator = operators[randomOperatorIndex];
 
