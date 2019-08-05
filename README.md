@@ -41,3 +41,11 @@ $ brain-progression
 ```
 
 <a href="https://asciinema.org/a/BflP0c8lYYyxsmBKTvAHIz8gb" target="_blank"><img src="https://asciinema.org/a/BflP0c8lYYyxsmBKTvAHIz8gb.svg" /></a>
+
+### Brain-prime:
+
+```zsh
+$ brain-prime
+```
+
+<a href="https://asciinema.org/a/l87ymQYJvAja1IH8WIp0DanLn" target="_blank"><img src="https://asciinema.org/a/l87ymQYJvAja1IH8WIp0DanLn.svg" /></a>
