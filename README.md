@@ -16,7 +16,7 @@ $ npm install -g project-one
 $ brain-even
 ```
 
-<a href="https://asciinema.org/a/7Rp2yoA46dfX8UkaoEJWeFRVV" target="_blank"><img src="https://asciinema.org/a/7Rp2yoA46dfX8UkaoEJWeFRVV.svg" /></a>
+<a href="https://asciinema.org/a/JZPNoZq16hMe2Op9PP4xy7jS6" target="_blank"><img src="https://asciinema.org/a/JZPNoZq16hMe2Op9PP4xy7jS6.svg" /></a>
 
 ### Brain-calc:
 
@@ -24,7 +24,7 @@ $ brain-even
 $ brain-calc
 ```
 
-<a href="https://asciinema.org/a/TjBBGAQa1P2PcAxCyJZEpT2rF" target="_blank"><img src="https://asciinema.org/a/TjBBGAQa1P2PcAxCyJZEpT2rF.svg" /></a>
+<a href="https://asciinema.org/a/ygfvQWr1a8ZeCc7Ut349bBaBt" target="_blank"><img src="https://asciinema.org/a/ygfvQWr1a8ZeCc7Ut349bBaBt.svg" /></a>
 
 ### Brain-gcd:
 
@@ -32,7 +32,7 @@ $ brain-calc
 $ brain-gcd
 ```
 
-<a href="https://asciinema.org/a/g33FtRZzYLfCKBePWvyNBleY3" target="_blank"><img src="https://asciinema.org/a/g33FtRZzYLfCKBePWvyNBleY3.svg" /></a>
+<a href="https://asciinema.org/a/HI9oEWQtyI7kkZPCorYPBo62w" target="_blank"><img src="https://asciinema.org/a/HI9oEWQtyI7kkZPCorYPBo62w.svg" /></a>
 
 ### Brain-progression:
 
@@ -40,7 +40,7 @@ $ brain-gcd
 $ brain-progression
 ```
 
-<a href="https://asciinema.org/a/BflP0c8lYYyxsmBKTvAHIz8gb" target="_blank"><img src="https://asciinema.org/a/BflP0c8lYYyxsmBKTvAHIz8gb.svg" /></a>
+<a href="https://asciinema.org/a/cEdhdza8138qIeaEPvwPbbCSs" target="_blank"><img src="https://asciinema.org/a/cEdhdza8138qIeaEPvwPbbCSs.svg" /></a>
 
 ### Brain-prime:
 
@@ -48,4 +48,4 @@ $ brain-progression
 $ brain-prime
 ```
 
-<a href="https://asciinema.org/a/l87ymQYJvAja1IH8WIp0DanLn" target="_blank"><img src="https://asciinema.org/a/l87ymQYJvAja1IH8WIp0DanLn.svg" /></a>
+<a href="https://asciinema.org/a/hOQyjfreWNMRnDtbYmoOFlBl" target="_blank"><img src="https://asciinema.org/a/hOQyjfreWNMRnDtbYmoOFlBl.svg" /></a>
