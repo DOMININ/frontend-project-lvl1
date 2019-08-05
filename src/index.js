@@ -7,8 +7,8 @@ const getGame = (description, getGameBody) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}! \n`);
 
-  const quesionsQTY = 3;
-  for (let i = 0; i < quesionsQTY; i += 1) {
+  const quesionsCount = 3;
+  for (let i = 0; i < quesionsCount; i += 1) {
     const [number, answerCorrect] = getGameBody();
 
     console.log(`Question: ${number}`);
