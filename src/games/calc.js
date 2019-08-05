@@ -1,38 +1,39 @@
-import getGame from '../index';
+import getGame from '..';
+import getRandomIntegerValue from '../utils';
 
 const description = 'What is the result of the expression?';
 
-const getCalc = () => {
-  const operators = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
-  const randomMin = 1;
-  const randomMax = 20;
+const randomMin = 1;
+const randomMax = 20;
 
-  const randomNumberFirst = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
-  const randomNumberSecond = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
-  const randomOperatorIndex = Math.floor(Math.random() * operators.length);
-  const randomOperator = operators[randomOperatorIndex];
+const getQuestionAndAnswer = () => {
+  const randomFirstNumber = getRandomIntegerValue(randomMax, randomMin);
+  const randomSecondNumber = getRandomIntegerValue(randomMax, randomMin);
+  const randomIndexOfOperator = Math.floor(Math.random() * operators.length);
+  const randomOperator = operators[randomIndexOfOperator];
 
-  const question = `${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`;
-  let answerCorrect = 0;
+  const question = `${randomFirstNumber} ${randomOperator} ${randomSecondNumber}`;
+  let correctAnswer;
 
   switch (randomOperator) {
     case '+':
-      answerCorrect = randomNumberFirst + randomNumberSecond;
+      correctAnswer = randomFirstNumber + randomSecondNumber;
       break;
     case '-':
-      answerCorrect = randomNumberFirst - randomNumberSecond;
+      correctAnswer = randomFirstNumber - randomSecondNumber;
       break;
     case '*':
-      answerCorrect = randomNumberFirst * randomNumberSecond;
+      correctAnswer = randomFirstNumber * randomSecondNumber;
       break;
     default:
-      answerCorrect = 'programm not working';
+      correctAnswer = 'programm not working';
   }
 
-  answerCorrect = String(answerCorrect);
+  correctAnswer = String(correctAnswer);
 
-  return [question, answerCorrect];
+  return [question, correctAnswer];
 };
 
-export default () => getGame(description, getCalc);
+export default () => getGame(description, getQuestionAndAnswer);

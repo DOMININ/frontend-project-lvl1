@@ -1,24 +1,25 @@
-import getGame from '../index';
+import getGame from '..';
+import getRandomIntegerValue from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getEven = () => {
-  const randomMin = 3;
-  const randomMax = 13;
+const randomMin = 3;
+const randomMax = 13;
 
-  const number = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
-
-  let answerCorrect = 'programm not working';
+const isPrime = (number) => {
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-      answerCorrect = 'no';
-      break;
-    } else {
-      answerCorrect = 'yes';
+      return false;
     }
   }
-
-  return [number, answerCorrect];
+  return true;
 };
 
-export default () => getGame(description, getEven);
+const getQuestionAndAnswer = () => {
+  const question = getRandomIntegerValue(randomMax, randomMin);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+
+  return [question, correctAnswer];
+};
+
+export default () => getGame(description, getQuestionAndAnswer);

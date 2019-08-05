@@ -1,29 +1,30 @@
-import getGame from '../index';
+import getGame from '..';
+import getRandomIntegerValue from '../utils';
 
 const description = 'What number is missing in the progression?';
 
-const getProgression = () => {
-  const randomMin = 1;
-  const randomMax = 5;
+const randomMin = 1;
+const randomMax = 5;
 
-  const progressionStep = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
-  const progressionStart = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
+const getQuestionAndAnswer = () => {
+  const progressionStep = getRandomIntegerValue(randomMax, randomMin);
+  const progressionStart = getRandomIntegerValue(randomMax, randomMin);
   const progressionLength = 10;
-  const progressionArray = [];
+  const progressionNumbers = [];
 
   const loopCondition = progressionLength * progressionStep + progressionStart;
 
   for (let i = progressionStart; i < loopCondition; i += progressionStep) {
-    progressionArray.push(i);
+    progressionNumbers.push(i);
   }
 
-  const progressionArrayRandomIndex = Math.floor(Math.random() * progressionArray.length);
-  const answerCorrect = String(progressionArray[progressionArrayRandomIndex]);
+  const progressionNumbersRandomIndex = Math.floor(Math.random() * progressionNumbers.length);
+  const correctAnswer = String(progressionNumbers[progressionNumbersRandomIndex]);
 
-  const progressionString = progressionArray.join(' ');
-  const question = progressionString.replace(answerCorrect, '..');
+  const progressionString = progressionNumbers.join(' ');
+  const question = progressionString.replace(correctAnswer, '..');
 
-  return [question, answerCorrect];
+  return [question, correctAnswer];
 };
 
-export default () => getGame(description, getProgression);
+export default () => getGame(description, getQuestionAndAnswer);
