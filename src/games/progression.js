@@ -21,7 +21,7 @@ const getProgression = () => {
   const answerCorrect = String(progressionArray[progressionArrayRandomIndex]);
 
   const progressionString = progressionArray.join(' ');
-  const question = progressionString.replace(answerCorrect, ' .. ');
+  const question = progressionString.replace(answerCorrect, '..');
 
   return [question, answerCorrect];
 };

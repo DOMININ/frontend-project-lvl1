@@ -34,7 +34,7 @@ $ brain-gcd
 $ brain-progression
 ```
 
-<a href="https://asciinema.org/a/cEdhdza8138qIeaEPvwPbbCSs" target="_blank"><img src="https://asciinema.org/a/cEdhdza8138qIeaEPvwPbbCSs.svg" /></a>
+<a href="https://asciinema.org/a/l3tI4haaTFXLm2qO3Wo7wVYzO" target="_blank"><img src="https://asciinema.org/a/l3tI4haaTFXLm2qO3Wo7wVYzO.svg" /></a>
 
 ### Brain-prime:
 
@@ -42,4 +42,4 @@ $ brain-progression
 $ brain-prime
 ```
 
-<a href="https://asciinema.org/a/hOQyjfreWNMRnDtbYmoOFlBl" target="_blank"><img src="https://asciinema.org/a/hOQyjfreWNMRnDtbYmoOFlBl.svg" /></a>
+<a href="https://asciinema.org/a/hOQyjfreWNMRnDtbYmoOFlBl9" target="_blank"><img src="https://asciinema.org/a/hOQyjfreWNMRnDtbYmoOFlBl9.svg" /></a>
