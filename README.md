@@ -4,12 +4,6 @@
 
 [![Build Status](https://travis-ci.org/DOMININ/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/DOMININ/frontend-project-lvl1)
 
-# Installing:
-
-```zsh
-$ npm install -g project-one
-```
-
 ### Brain-even:
 
 ```zsh
