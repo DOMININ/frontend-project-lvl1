@@ -1,4 +1,4 @@
-import getGame from '..';
+import startGame from '..';
 import getRandomIntegerValue from '../utils';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
@@ -15,4 +15,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => getGame(description, getQuestionAndAnswer);
+export default () => startGame(description, getQuestionAndAnswer);

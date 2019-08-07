@@ -1,30 +1,30 @@
-import getGame from '..';
+import startGame from '..';
 import getRandomIntegerValue from '../utils';
 
 const description = 'What number is missing in the progression?';
 
+const progressionLength = 10;
+
 const randomMin = 1;
 const randomMax = 5;
 
+const randomIndexMin = 0;
+const randomIndexMax = progressionLength;
+
 const getQuestionAndAnswer = () => {
-  const progressionStep = getRandomIntegerValue(randomMax, randomMin);
-  const progressionStart = getRandomIntegerValue(randomMax, randomMin);
-  const progressionLength = 10;
-  const progressionNumbers = [];
+  const step = getRandomIntegerValue(randomMax, randomMin);
+  const start = getRandomIntegerValue(randomMax, randomMin);
+  const numbers = [];
 
-  const loopCondition = progressionLength * progressionStep + progressionStart;
-
-  for (let i = progressionStart; i < loopCondition; i += progressionStep) {
-    progressionNumbers.push(i);
+  const hiddenElementIndex = getRandomIntegerValue(randomIndexMax, randomIndexMin);
+  for (let i = 0; i < progressionLength; i += 1) {
+    numbers.push(i === hiddenElementIndex ? '..' : i * step + start);
   }
 
-  const progressionNumbersRandomIndex = Math.floor(Math.random() * progressionNumbers.length);
-  const correctAnswer = String(progressionNumbers[progressionNumbersRandomIndex]);
-
-  const progressionString = progressionNumbers.join(' ');
-  const question = progressionString.replace(correctAnswer, '..');
+  const correctAnswer = String(hiddenElementIndex * step + start);
+  const question = numbers.join(' ');
 
   return [question, correctAnswer];
 };
 
-export default () => getGame(description, getQuestionAndAnswer);
+export default () => startGame(description, getQuestionAndAnswer);

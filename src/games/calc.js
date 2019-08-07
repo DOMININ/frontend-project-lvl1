@@ -1,4 +1,4 @@
-import getGame from '..';
+import startGame from '..';
 import getRandomIntegerValue from '../utils';
 
 const description = 'What is the result of the expression?';
@@ -8,24 +8,27 @@ const operators = ['+', '-', '*'];
 const randomMin = 1;
 const randomMax = 20;
 
-const getQuestionAndAnswer = () => {
-  const randomFirstNumber = getRandomIntegerValue(randomMax, randomMin);
-  const randomSecondNumber = getRandomIntegerValue(randomMax, randomMin);
-  const randomIndexOfOperator = Math.floor(Math.random() * operators.length);
-  const randomOperator = operators[randomIndexOfOperator];
+const randomOperatorMin = 0;
+const randomOperatorMax = operators.length;
 
-  const question = `${randomFirstNumber} ${randomOperator} ${randomSecondNumber}`;
+const getQuestionAndAnswer = () => {
+  const firstNumber = getRandomIntegerValue(randomMax, randomMin);
+  const secondNumber = getRandomIntegerValue(randomMax, randomMin);
+  const indexOfOperator = getRandomIntegerValue(randomOperatorMax, randomOperatorMin);
+  const operator = operators[indexOfOperator];
+
+  const question = `${firstNumber} ${operator} ${secondNumber}`;
   let correctAnswer;
 
-  switch (randomOperator) {
+  switch (operator) {
     case '+':
-      correctAnswer = randomFirstNumber + randomSecondNumber;
+      correctAnswer = firstNumber + secondNumber;
       break;
     case '-':
-      correctAnswer = randomFirstNumber - randomSecondNumber;
+      correctAnswer = firstNumber - secondNumber;
       break;
     case '*':
-      correctAnswer = randomFirstNumber * randomSecondNumber;
+      correctAnswer = firstNumber * secondNumber;
       break;
     default:
       correctAnswer = 'programm not working';
@@ -36,4 +39,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => getGame(description, getQuestionAndAnswer);
+export default () => startGame(description, getQuestionAndAnswer);
