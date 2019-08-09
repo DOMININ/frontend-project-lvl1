@@ -3,13 +3,13 @@ import getRandomIntegerValue from '../utils';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
-const randomMin = 1;
-const randomMax = 20;
+const min = 1;
+const max = 20;
 
 const isEven = number => number % 2 === 0;
 
 const getQuestionAndAnswer = () => {
-  const question = getRandomIntegerValue(randomMax, randomMin);
+  const question = getRandomIntegerValue(max, min);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];

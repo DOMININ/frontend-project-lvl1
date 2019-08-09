@@ -5,16 +5,15 @@ const description = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
-const randomMin = 1;
-const randomMax = 20;
+const min = 0;
+const max = 20;
 
-const randomOperatorMin = 0;
-const randomOperatorMax = operators.length;
+const operatorsLength = operators.length;
 
 const getQuestionAndAnswer = () => {
-  const firstNumber = getRandomIntegerValue(randomMax, randomMin);
-  const secondNumber = getRandomIntegerValue(randomMax, randomMin);
-  const indexOfOperator = getRandomIntegerValue(randomOperatorMax, randomOperatorMin);
+  const firstNumber = getRandomIntegerValue(max, min);
+  const secondNumber = getRandomIntegerValue(max, min);
+  const indexOfOperator = getRandomIntegerValue(operatorsLength, min);
   const operator = operators[indexOfOperator];
 
   const question = `${firstNumber} ${operator} ${secondNumber}`;

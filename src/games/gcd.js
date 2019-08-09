@@ -3,8 +3,8 @@ import getRandomIntegerValue from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const randomMin = 10;
-const randomMax = 50;
+const min = 10;
+const max = 50;
 
 const findGcd = (firstNumber, secondNumber) => {
   const maxNumber = Math.max(firstNumber, secondNumber);
@@ -22,8 +22,8 @@ const findGcd = (firstNumber, secondNumber) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const firstNumber = getRandomIntegerValue(randomMax, randomMin);
-  const secondNumber = getRandomIntegerValue(randomMax, randomMin);
+  const firstNumber = getRandomIntegerValue(max, min);
+  const secondNumber = getRandomIntegerValue(max, min);
 
   const question = `${firstNumber} ${secondNumber}`;
   const correctAnswer = String(findGcd(firstNumber, secondNumber));

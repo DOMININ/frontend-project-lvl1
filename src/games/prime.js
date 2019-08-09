@@ -3,11 +3,11 @@ import getRandomIntegerValue from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const randomMin = 3;
-const randomMax = 13;
+const min = 3;
+const max = 13;
 
 const isPrime = (number) => {
-  if (number === 0 || number === 1) {
+  if (number <= 1) {
     return false;
   }
 
@@ -20,7 +20,7 @@ const isPrime = (number) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = getRandomIntegerValue(randomMax, randomMin);
+  const question = getRandomIntegerValue(max, min);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
